@@ -5,7 +5,44 @@
     <title>DOJ Charges v1</title>
 
     <style>
+.container {
+    padding: 30px;
+}
 
+
+details {
+    background: #1c1c1c;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+summary {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+}
+
+
+details[open] summary {
+    border-bottom: 1px solid #444;
+}
+
+
+.charge {
+    background: #111;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+
+.charge h3 {
+    margin-top: 0;
+}
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -42,7 +79,57 @@
         <h1>Department of Justice</h1>
         <p>Criminal Code Database</p>
     </header>
+<div class="container">
 
+    <!-- Violent Crimes -->
+    <details>
+        <summary>Violent Crimes</summary>
+
+        <div class="charge">
+            <h3>Charge Name</h3>
+            <p>
+                Fine: $0<br>
+                Time: 0 Months<br>
+                Type: Principal
+            </p>
+        </div>
+
+    </details>
+
+
+    <!-- Property Crimes -->
+    <details>
+        <summary>Property Crimes</summary>
+
+        <div class="charge">
+            <h3>Charge Name</h3>
+            <p>
+                Fine: $0<br>
+                Time: 0 Months<br>
+                Type: Principal
+            </p>
+        </div>
+
+    </details>
+
+
+    <!-- Weapons Offences -->
+    <details>
+        <summary>Weapons Offences</summary>
+
+        <div class="charge">
+            <h3>Charge Name</h3>
+            <p>
+                Fine: $0<br>
+                Time: 0 Months<br>
+                Type: Principal
+            </p>
+        </div>
+
+    </details>
+
+
+</div>
 
 </body>
 
